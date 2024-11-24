@@ -1,0 +1,20 @@
+{
+  "name": "frontend-project-46",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/eshimovTK/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/eshimovTK/frontend-project-46/actions)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eshimov T.K.",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
