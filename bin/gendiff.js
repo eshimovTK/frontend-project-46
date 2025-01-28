@@ -11,23 +11,20 @@ const gendiff = (file1, file2) => {
   const keys2 = Object.keys(obj2);
   const keysSort = _.uniq(keys1.concat(keys2)).sort();
   console.log('{');
-  for (const key of keysSort) {
+  keysSort.forEach((key) => {
     if (obj2[key] === undefined) {
       console.log(`  - ${key}: ${obj1[key]}`);
-      continue;
     }
     if (obj1[key] === obj2[key]) {
       console.log(`    ${key}: ${obj1[key]}`);
-      continue;
     }
     if (obj2[key] !== obj1[key] && obj1[key] !== undefined) {
       console.log(`  - ${key}: ${obj1[key]}\n  + ${key}: ${obj2[key]}`);
-      continue;
     }
     if (obj2[key] !== obj1[key] && obj1[key] === undefined) {
       console.log(`  + ${key}: ${obj2[key]}`);
     }
-  }
+  });
   console.log('}');
 };
 
